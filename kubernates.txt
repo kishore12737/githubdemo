@@ -1,0 +1,125 @@
+kubernate
+============================================================================================================================
+Introduction to Kubernetes 
+Kubernetes – Installation Methods
+Installation of Kubernetes on Ubuntu
+Kubernetes – Architecture
+Kubernetes – Monolithic Architecture of Kubernetes
+Kubernetes vs Docker
+Kubernetes – Concept of Containers
+Kubernetes – Introduction to Container Orchestration
+Kubernetes – Images
+Kubernetes – Jobs
+Kubernetes – Labels & Selectors
+Kubernetes – Namespace
+Kubernetes – Node
+Kubernetes – Node Port Service
+Kubernetes – Cluster IP vs Node-Port
+Kubernetes – Service
+Kubernetes – Service DNS
+Kubernetes – Pod
+Kubernetes – Run a Command in Pod’s Containers
+Kubernetes – Create Multiple Container in a Pod
+Kubernetes – Replication Controller
+Kubernetes – Difference Between Replicaset and Replication Controller
+Kubernetes – Deployments
+Kubernetes – Volumes
+Kubernetes – Secrets
+Kubernetes – Working with Secrets
+How to set up a Kubernetes cluster on a local machine using minikube?
+Kubernetes – Physical Servers vs Virtual Machines vs Containers
+
+cluster: collection of multiple system as cluster.
+collection of nodes.
+
+1.master node:
+-brain of the infastruture.
+-master node conected with worker node both are communicated.
+-controllering operations are doing worker node.
+-master renamed called as control clane
+
+2.worker node:
+actual microservers are handling systems.
+containers,deployements are workr node handled.
+
+
+https://www.aquasec.com/cloud-native-academy/kubernetes-101/kubernetes-architecture/
+
+master server: in cloud vm or physical server,Ec2 instance
+    
+linux machine having in master server.
+
+--components.
+
+1. Api server
+2. Controller manager
+3. schduler
+4. etcd
+
+its  a brain of the server, then it connected nodes
+
+1. Api server:
+
+API server is a component of the kubernates control plane that expose kubernates API.
+API server is the front end for the kubernates control plane. 
+
+2.schduler:
+ control plane component that watches for newly created pods with no assigned node and select a node for 
+them  to run on.
+
+kublet dwara cpu antha kaliaga undi ani mode node ki system dwra  API theliya chestundi.
+
+
+3.Controller manager: 
+control plane  components that runs controller processes.
+
+4.etcd:
+Consitent and highly-available key value store used as kubernates backing store for all cluster data.
+
+all data stored in the etcd
+
+
+
+
+worker node component:
+
+kubelet: continous ga process chese agent la work avuthundi.
+
+kube-proxy : prthhi worker lo untadi ante background untadi , background process chestundi.
+
+container platform.
+
+
+
+workload components:
+=====================================================================================================================================
+pods:
+ 
+kubernates is called as pod(container).
+
+pod is a collection one or more contianers then it is called as pod.
+
+buble lopala one o more containers
+
+Deployements
+
+services
+
+ingress
+
+configMaps
+
+secretes
+
+NameSpaces
+
+Perisitent Volumes
+
+Perisitent Volumes claims
+
+Statefuslsets and more...
+
+
+
+
+differece between kops and 
